@@ -2,12 +2,16 @@
 
 function filterInStockProducts(products) {
   // เริ่มเขียนโค้ดตรงนี้
+  let newProduct = products.filter((products) => (products.quantity > 0));
+  return newProduct;
+/*
   let newProduct = products.filter((products) => {
     if (products.quantity > 0){
       return products;
     }
   });
   return newProduct;
+*/
 }
 
 // ตัวอย่างการใช้งาน
